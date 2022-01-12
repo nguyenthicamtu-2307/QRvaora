@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/hedder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/backgroud">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg"
+            android:layout_marginTop="5dp"
+            android:text="Cập Nhật Thông Tin Cá Nhân"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtTenKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hedder"
+        android:layout_marginTop="51dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bogoc"
+        android:hint="Họ và tên" />
+
+    <EditText
+        android:id="@+id/txtdiachi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenKH"
+        android:layout_marginTop="36dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bogoc"
+        android:hint="Địa Chỉ" />
+
+    <EditText
+        android:id="@+id/txtgioitinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdiachi"
+        android:layout_marginTop="37dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bogoc"
+        android:hint="Giới Tính" />
+
+    <EditText
+        android:id="@+id/txtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtgioitinh"
+        android:layout_marginTop="31dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bogoc"
+        android:hint="Ngày Sinh" />
+
+    <EditText
+        android:id="@+id/txtsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtns"
+        android:layout_margin="10dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bogoc"
+        android:hint="số điện thoại" />
+
+    <Button
+        android:id="@+id/capn"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/txtsdt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/style_btn"
+        android:hint="Cập Nhật"
+        android:backgroundTint="#1E90FF"
+        android:textColorHint="#fff"
+        android:textSize="20dp" />
+</RelativeLayout>
